@@ -1,6 +1,31 @@
 # PHISHCOOP phishing website detection
 Detection of phishing websites is a really important safety measure for most of the online platforms. So, as to save a platform with malicious requests from such websites, it is important to have a robust phishing detection system in place.
 
+
+## Installation execution
+
+```
+git clone https://github.com/Shankhanil/detecting-phishing-websites.git
+python -m venv myenv
+myenv\Scripts\activate.bat
+pip install -r requirements.txt
+python index.py
+```
+<br>
+Then, in the command line, input a sample website to check if it has phishing or not. If it returns -1 it means its not phishing. If it enters +1 it is phishing website. 
+<br>
+Example of non phishing website: https://www.google.com/
+<br>
+Example of non phishing website: http://federmacedoadv.com.br/3f/aze/ab51e2e319e51502f416dbe46b773a5e/?cmd=_home&amp;dispatch=11004d58f5b74f8dc1e7c2e8dd4105e811004d58f5b74f8dc1e7c2e8dd4105e8
+<br>
+
+After work is done, deactivate the venv, by writing this command 
+
+```
+myenv\Scripts\deactivate.bat
+```
+
+
 ## DATA SELECTION
 
 The dataset is downloaded from UCI machine learning repository. The dataset contains 31 columns, with 30 features and 1 target. The dataset has 2456 observations.
@@ -33,4 +58,3 @@ Random forest was giving very good accuracy. We can also try artificial neural n
 ## FEATURE IMPORTANCES
 
 ![FEATURE IMPORTANCE](https://raw.githubusercontent.com/abhishekdid/PHISHCOOP-phishing-website-detection/master/variable_Importances.png)
-
