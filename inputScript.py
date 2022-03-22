@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import regex    
+import regex
 from tldextract import extract
 import ssl
 import socket

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 #importing libraries
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 import inputScript
 
 #load the pickle file
